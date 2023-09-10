@@ -1,8 +1,7 @@
 import React from 'react';
 
 const ProductRating = ({ rating }) => {
-  // Round the rating to the nearest half-star
- 
+
   const roundedRating = Math.round(rating * 2) / 2;
 
   return (

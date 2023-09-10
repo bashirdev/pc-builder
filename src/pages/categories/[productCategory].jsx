@@ -2,7 +2,6 @@ import ProductRating from '@/components/UI/ProductRating';
 import RootLayout from '@/components/layout/RootLayout';
 import { AddtoCart } from '@/redux/productSlice';
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import Router from 'next/router'

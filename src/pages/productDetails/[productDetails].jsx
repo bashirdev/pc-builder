@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 
 const ProductDetails = ({ singleItem}) => {
-console.log(singleItem);
+
     return (
         <div className='container mx-auto my-[50px]'>
           <div className="flex gap-1">

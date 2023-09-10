@@ -1,6 +1,6 @@
 import PcBuilderCard from '@/components/UI/PcBuilderCard';
 import RootLayout from '@/components/layout/RootLayout';
-import Image from 'next/image';
+
 import React from 'react';
 
 const PcBuilderPage = ({data}) => {
