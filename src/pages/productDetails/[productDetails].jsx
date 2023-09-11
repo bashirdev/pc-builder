@@ -44,7 +44,7 @@ ProductDetails.getLayout=function getLayout(page){
 
 
 export const getStaticPaths=async()=>{
-    const res=await fetch(`http://localhost:5000/api/v1/getAllProdcut`)
+    const res=await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/getAllProdcut`)
     const data=await res.json();
     const paths=data?.data.map((details)=>({
         params:{productDetails:details._id}
@@ -56,7 +56,7 @@ export const getStaticPaths=async()=>{
 export const getStaticProps=async(context)=>{
     const {params} =context;
 console.log(params);
-    const res=await fetch(`http://localhost:5000/api/v1/getSingleProdcut/${params.productDetails}`)
+    const res=await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/getSingleProdcut/${params.productDetails}`)
     const data=await res.json();
     return{
         props:{

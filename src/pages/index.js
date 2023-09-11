@@ -27,7 +27,7 @@ Home.getLayout=function getLayout(page){
 
 export async function getStaticProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:5000/api/v1/getAllProdcut`)
+  const res = await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/getAllProdcut`)
   const data = await res.json()
  
   // Pass data to the page via props

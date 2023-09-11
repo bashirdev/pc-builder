@@ -22,7 +22,7 @@ PcBuilderPage.getLayout=function getLayout(page){
 // This gets called on every request
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`http://localhost:5000/api/v1/getAllProdcut`)
+  const res = await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/getAllProdcut`)
   const data = await res.json()
  
   // Pass data to the page via props

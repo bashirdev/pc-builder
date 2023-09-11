@@ -18,7 +18,6 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
      
     <li>  <Link href='/'>Home</Link></li>
-      <li><Link href='/about'>About Us</Link></li>
       <li>  <Link href='/pc-builder'>PC-Builder</Link></li>
       <li>
         <details>

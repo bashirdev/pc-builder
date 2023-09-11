@@ -62,7 +62,7 @@ ProductCategoryPage.getLayout=function getLayout(page){
 }
 
 export const getStaticPaths=async()=>{
-    const res=await fetch(`http://localhost:5000/api/v1/getAllProdcut`)
+    const res=await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/getAllProdcut`)
     const data=await res.json();
     const paths=data?.data.map((details)=>({
         params:{productCategory:details.category}
@@ -76,7 +76,7 @@ export const getStaticPaths=async()=>{
 export const getStaticProps=async(context)=>{
     const {params} =context;
 
-    const res=await fetch(`http://localhost:5000/api/v1/ProductGetByCategory/${params.productCategory}`)
+    const res=await fetch(`https://pc-builder-server-bashirdev.vercel.app/api/v1/ProductGetByCategory/${params.productCategory}`)
     const data=await res.json();
     return{
         props:{ 
